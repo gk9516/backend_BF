@@ -4,7 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__,)
 CORS(app, resources={r"/bfhl": {"origins": "https://frontend-vert-chi-82.vercel.app/"}})
 @app.route('/bfhl', methods=['POST'])
-def process_data():
+def bfhl():
     try:
         data = request.json.get('data')
         if not data:
