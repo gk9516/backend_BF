@@ -9,13 +9,9 @@
   "routes": [
     {
       "src": "/bfhl",
-      "methods": ["POST"],
-      "dest": "app.py"
-    },
-    {
-      "src": "/bfhl",
-      "methods": ["GET"],
+      "methods": ["POST", "GET"],
       "dest": "app.py"
     }
   ]
+}
 }
