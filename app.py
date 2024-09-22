@@ -2,7 +2,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 app = Flask(__name__,)
-CORS(app, resources={r"/bfhl": {"origins": "https://frontend-vert-chi-82.vercel.app"}})
+CORS(app, resources={r"/bfhl": {"origins": "https://frontend-vert-chi-82.vercel.app/"}})
 @app.route('/bfhl', methods=['POST'])
 def bfhl():
     try:
